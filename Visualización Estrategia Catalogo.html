@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia de Producción Audiovisual - Catálogo 2.0 Umine</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* slate-50 */
+        }
+        .hero-gradient {
+            background: radial-gradient(circle, rgba(96, 165, 250, 0.1), transparent 70%);
+        }
+        .section-title {
+            @apply text-4xl md:text-5xl font-extrabold text-slate-800 mb-4 tracking-tight;
+        }
+        .section-subtitle {
+            @apply text-lg text-slate-500 max-w-3xl mx-auto;
+        }
+        .card {
+            @apply bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+        }
+        .hub-node {
+            @apply transition-all duration-300 cursor-pointer;
+        }
+        .hub-node:hover {
+            transform: scale(1.05);
+        }
+        .hub-node:hover .hub-text {
+            @apply text-blue-600;
+        }
+        .timeline-item {
+            @apply relative pl-12 pb-12;
+        }
+        .timeline-item:last-child {
+            @apply pb-0;
+        }
+        .timeline-marker {
+            @apply absolute left-0 top-1 flex items-center justify-center w-8 h-8 rounded-full;
+        }
+        .timeline-line {
+            @apply absolute top-1 left-4 w-px h-full bg-slate-300;
+        }
+        .cta-gradient {
+             background: linear-gradient(45deg, #60a5fa, #818cf8);
+        }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-slate-800">Umine Catálogo 2.0</h1>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+                <a href="#vision" class="text-slate-600 hover:text-blue-600 transition-colors">Visión</a>
+                <a href="#modelo" class="text-slate-600 hover:text-blue-600 transition-colors">Modelo</a>
+                <a href="#flujo" class="text-slate-600 hover:text-blue-600 transition-colors">Flujo</a>
+                <a href="#cronograma" class="text-slate-600 hover:text-blue-600 transition-colors">Cronograma</a>
+                <a href="#proximos-pasos" class="text-slate-600 hover:text-blue-600 transition-colors">Próximos Pasos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pt-24">
+        <!-- Section 1: Visión y Desafío -->
+        <section id="vision" class="py-20 md:py-32 text-center relative overflow-hidden">
+            <div class="hero-gradient absolute inset-0"></div>
+            <div class="container mx-auto px-6 relative">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-slate-800 leading-tight">
+                    Transformando el Aprendizaje:
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">Catálogo 2.0</span>
+                </h2>
+                <p class="mt-6 text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
+                    Nuestra visión es crear una experiencia de aprendizaje inmersiva y atractiva que establezca un nuevo estándar en la capacitación corporativa, combinando eficiencia, creatividad y un alto impacto emocional.
+                </p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div class="card text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                        <h3 class="font-bold text-lg text-slate-800">Calidad Superior</h3>
+                        <p class="text-sm text-slate-500 mt-1">Contenidos que superan las expectativas del mercado.</p>
+                    </div>
+                    <div class="card text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                        <h3 class="font-bold text-lg text-slate-800">Eficiencia Acelerada</h3>
+                        <p class="text-sm text-slate-500 mt-1">Flujo optimizado para cumplir plazos ambiciosos.</p>
+                    </div>
+                    <div class="card text-left">
+                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-blue-500 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z" /></svg>
+                        <h3 class="font-bold text-lg text-slate-800">Retorno de Inversión</h3>
+                        <p class="text-sm text-slate-500 mt-1">Contenido de alta calidad que impulsará inscripciones.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Modelo de Producción -->
+        <section id="modelo" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Modelo de Trabajo</h2>
+                <p class="section-subtitle">Maximizamos la eficiencia y calidad combinando talento interno y externo a través de nuestro</p>
+                <h3 style="font-family: 'Dancing Script', cursive;" class="text-5xl md:text-6xl text-indigo-600 my-4">Hub Creativo Híbrido</h3>
+                <p class="text-sm text-slate-400 mb-16">Pase el cursor sobre cada rol para ver los detalles.</p>
+
+                <div class="max-w-6xl mx-auto">
+                    <svg viewBox="0 0 800 400" class="w-full">
+                        <!-- Conexiones (Drawn First) -->
+                        <line x1="400" y1="200" x2="150" y2="100" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5 5"/>
+                        <line x1="400" y1="200" x2="150" y2="300" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5 5"/>
+                        <line x1="400" y1="200" x2="650" y2="70" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5 5"/>
+                        <line x1="400" y1="200" x2="650" y2="150" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5 5"/>
+                        <line x1="400" y1="200" x2="650" y2="230" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5 5"/>
+                        <line x1="400" y1="200" x2="650" y2="310" stroke="#d1d5db" stroke-width="2" stroke-dasharray="5 5"/>
+
+                        <!-- Equipo Interno -->
+                        <g class="hub-node" data-info="Lidera la conceptualización visual y la supervisión técnica de proyectos audiovisuales, asegurando la coherencia, alto impacto y accesibilidad del catálogo, y coordinando todas las fases de postproducción.">
+                            <circle cx="150" cy="100" r="60" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                            <text x="150" y="95" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Directora</text>
+                            <text x="150" y="111" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Creativa & Post</text>
+                        </g>
+                        <g class="hub-node" data-info="Crea y optimiza experiencias formativas, potenciando guiones con storytelling y la integración estratégica de IA, recursos, evaluaciones y criterios SENCE para generar aprendizaje efectivo y engagement.">
+                            <circle cx="150" cy="300" r="60" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                            <text x="150" y="290" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Diseñadora de</text>
+                            <text x="150" y="306" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Experiencias de</text>
+                            <text x="150" y="322" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Aprendizaje (LXD)</text>
+                        </g>
+
+                        <!-- Equipo Externo -->
+                        <g class="hub-node" data-info="Talento especializado en animación para crear un branding de alto impacto y recursos visuales dinámicos.">
+                             <circle cx="650" cy="70" r="45" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                             <text x="650" y="68" text-anchor="middle" class="hub-text" font-weight="bold" font-size="14">Mograph</text>
+                             <text x="650" y="86" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Designers</text>
+                        </g>
+                         <g class="hub-node" data-info="Creadores de contenido ágil (video shorts, micro-cápsulas) para maximizar el engagement y dinamismo.">
+                             <circle cx="650" cy="150" r="45" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                             <text x="650" y="148" text-anchor="middle" class="hub-text" font-weight="bold" font-size="14">Content</text>
+                             <text x="650" y="166" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">Creators</text>
+                        </g>
+                        <g class="hub-node" data-info="Apoyo en montaje, sincronización y primeras ediciones para acelerar la producción.">
+                             <circle cx="650" cy="230" r="45" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                             <text x="650" y="228" text-anchor="middle" class="hub-text" font-weight="bold" font-size="14">Editores</text>
+                             <text x="650" y="246" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">AV</text>
+                        </g>
+                        <g class="hub-node" data-info="Externalización de la creación de evaluaciones y material complementario para certificación SENCE.">
+                             <circle cx="650" cy="310" r="45" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+                             <text x="650" y="308" text-anchor="middle" class="hub-text" font-weight="bold" font-size="14">Expertos</text>
+                             <text x="650" y="326" text-anchor="middle" class="hub-text" font-weight="bold" font-size="12">DI</text>
+                        </g>
+                        
+                        <text x="150" y="30" text-anchor="middle" font-size="16" font-weight="bold" fill="#475569">Equipo Interno Core</text>
+                        <text x="650" y="20" text-anchor="middle" font-size="16" font-weight="bold" fill="#475569">Talento Externo Estratégico</text>
+                        
+                        <!-- Centro: Hub (Drawn Last) -->
+                        <g>
+                            <circle cx="400" cy="200" r="70" fill="#2563eb" />
+                            <text x="400" y="195" font-family="Inter" font-size="18" fill="white" text-anchor="middle" font-weight="bold">Hub Creativo</text>
+                            <text x="400" y="220" font-family="Inter" font-size="14" fill="white" text-anchor="middle" opacity="0.9">UMINE</text>
+                        </g>
+                    </svg>
+                    <div id="hub-info-box" class="mt-8 h-12 text-center text-slate-600 font-semibold text-lg transition-opacity duration-300 opacity-0">
+                        <!-- Content will be injected by JS -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Flujo de Producción -->
+        <section id="flujo" class="py-20 md:py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="section-title">Flujo de Producción Ágil</h2>
+                    <p class="section-subtitle">Un proceso colaborativo y en paralelo, diseñado para la máxima eficiencia y calidad en 10 pasos clave.</p>
+                </div>
+
+                <div class="max-w-3xl mx-auto">
+                    <div class="relative">
+                        <div class="timeline-line"></div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">1</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Creación y Glow-up de Guiones</h3>
+                            <p class="text-slate-500">La DI crea y optimiza guiones con apoyo de IA, enfocándose en storytelling y 'attention economy'.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">2</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Definición de Storyflow</h3>
+                            <p class="text-slate-500">La Directora Creativa define el mood visual y flujo narrativo para guiar la producción de cada curso.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">3</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Desarrollo de Recursos Dinámicos</h3>
+                            <p class="text-slate-500">Mograph y Content Creators externos producen el branding animado y cápsulas de video.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">4</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Locución y Grabación</h3>
+                            <p class="text-slate-500">Grabación de locuciones de alta calidad y material de rodaje si aplica.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">5</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Montaje y Edición</h3>
+                            <p class="text-slate-500">Editores externos realizan el montaje inicial. La Coordinación AV supervisa y finaliza.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">6</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Creación Contenido Complementario</h3>
+                            <p class="text-slate-500">En paralelo, se externaliza la creación de evaluaciones y material SENCE.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">7</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Implementación de Accesibilidad</h3>
+                            <p class="text-slate-500">Se asegura la subtitulación y cumplimiento de guías de accesibilidad.</p>
+                        </div>
+                         <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">8</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">QA Técnico y de Contenido</h3>
+                            <p class="text-slate-500">Revisión exhaustiva para garantizar calidad técnica y pedagógica. Se utilizará una <a href="https://encuestaav.tiiny.site/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline font-semibold">encuesta de calidad</a> para la revisión cruzada entre pares del equipo.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-blue-500 text-white"><span class="font-bold">9</span></div>
+                            <h3 class="font-bold text-lg text-slate-800">Codificación SENCE</h3>
+                            <p class="text-slate-500">La DI realiza la codificación final para cada curso.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker bg-green-500 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg>
+                            </div>
+                            <h3 class="font-bold text-lg text-slate-800">Entrega Final</h3>
+                            <p class="text-slate-500">Contenidos optimizados y listos para la plataforma LMS de Umine.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Cronograma y Presupuesto -->
+        <section id="cronograma" class="py-20 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="text-center mb-16">
+                    <h2 class="section-title">Cronograma y Presupuesto</h2>
+                    <p class="section-subtitle">Un plan claro y escalable para entregar 30 cursos de alto impacto para Febrero de 2026.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
+                    <!-- Gantt Chart -->
+                    <div class="lg:col-span-3 card p-8">
+                        <h3 class="font-bold text-xl text-slate-800 mb-6">Plan de Producción</h3>
+                        <div class="space-y-6">
+                            <!-- Fase 1 -->
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-slate-700">Fase 1: Primeros 15 Cursos</span>
+                                    <span class="text-sm font-medium text-slate-500">Jul - Ago 2025 (Pilotos)</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-8 relative">
+                                    <div class="bg-blue-600 h-8 rounded-full flex items-center justify-center" style="width: 100%">
+                                        <span class="text-sm text-white font-bold">15 Cursos</span>
+                                    </div>
+                                    <div class="bg-blue-400 h-8 rounded-full absolute top-0 left-0 flex items-center justify-center" style="width: 26.66%;" title="4 Cursos Piloto">
+                                         <span class="text-xs text-white font-bold px-2">4 Pilotos</span>
+                                    </div>
+                                </div>
+                                 <p class="text-sm text-slate-500 mt-2">Definición de branding, contratación de freelancers y validación del modelo con 4 cursos piloto.</p>
+                            </div>
+                            <!-- Fase 2 -->
+                             <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="font-semibold text-slate-700">Fase 2: Siguientes 15 Cursos</span>
+                                    <span class="text-sm font-medium text-slate-500">Sep 2025 - Feb 2026</span>
+                                </div>
+                                <div class="w-full bg-slate-200 rounded-full h-8">
+                                    <div class="bg-blue-800 h-8 rounded-full flex items-center justify-center" style="width: 100%">
+                                        <span class="text-sm text-white font-bold">15 Cursos</span>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-slate-500 mt-2">Producción simultánea y en lotes para alcanzar la meta, aplicando los aprendizajes de la fase piloto.</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 text-center">
+                             <a href="https://www.notion.so/20fb6ce26d2c809fb002ef8ed1fcfce6?v=20fb6ce26d2c80819393000cecea797a" target="_blank" rel="noopener noreferrer" class="inline-block bg-slate-800 text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-slate-900 transition-colors">
+                                Notion del cronograma detallado
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Budget -->
+                    <div class="lg:col-span-2 space-y-6">
+                        <div class="card text-center">
+                             <h4 class="font-semibold text-slate-500 text-lg">Presupuesto Total</h4>
+                            <p class="font-extrabold text-5xl text-blue-600 my-2" data-target="72" data-prefix="$" data-suffix="M">$0M</p>
+                            <p class="text-slate-500">Para 30 cursos</p>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="card text-center">
+                                <h4 class="font-semibold text-slate-500 text-sm">Costo / Curso</h4>
+                                <p class="font-bold text-2xl text-slate-800 my-1" data-target="2.4" data-prefix="$" data-suffix="M">$0M</p>
+                                <p class="text-xs text-slate-400">Estimado</p>
+                            </div>
+                             <div class="card text-center">
+                                <h4 class="font-semibold text-slate-500 text-sm">Inversión Pilotos</h4>
+                                <p class="font-bold text-2xl text-slate-800 my-1" data-target="9.6" data-prefix="$" data-suffix="M">$0M</p>
+                                <p class="text-xs text-slate-400">Hasta Agosto</p>
+                            </div>
+                        </div>
+                         <div class="card">
+                            <h4 class="font-bold text-slate-800 mb-2">Distribución de Inversión</h4>
+                            <ul class="text-sm space-y-2 text-slate-600">
+                                <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Foco en talento freelance especializado.</li>
+                                 <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Externalización de evaluaciones y contenido.</li>
+                                 <li class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-2 text-blue-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg> Optimización de herramientas (ej. Claude AI).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Próximos Pasos -->
+        <section id="proximos-pasos" class="py-20 md:py-32">
+             <div class="container mx-auto px-6 text-center">
+                <h2 class="section-title">Próximos Pasos</h2>
+                <p class="section-subtitle mb-12">Un plan de acción inmediato para poner en marcha nuestra visión.</p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-blue-500">
+                        <div class="text-3xl font-extrabold text-blue-500/30 mb-2">01</div>
+                        <h3 class="font-bold text-slate-800">Brief Creativo</h3>
+                        <p class="text-sm text-slate-500 mt-2">Recursos y referencias audiovisuales.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-blue-500">
+                        <div class="text-3xl font-extrabold text-blue-500/30 mb-2">02</div>
+                        <h3 class="font-bold text-slate-800">Activar Talentos</h3>
+                        <p class="text-sm text-slate-500 mt-2">Selección y cotización de freelancers (Mograph, Creators).</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-blue-500">
+                        <div class="text-3xl font-extrabold text-blue-500/30 mb-2">03</div>
+                        <h3 class="font-bold text-slate-800">Diseñar Branding AV</h3>
+                        <p class="text-sm text-slate-500 mt-2">Establecer la línea gráfica animada de Umine.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-blue-500">
+                        <div class="text-3xl font-extrabold text-blue-500/30 mb-2">04</div>
+                        <h3 class="font-bold text-slate-800">Aprobar Gantt</h3>
+                        <p class="text-sm text-slate-500 mt-2">Presentar y aprobar el cronograma detallado del proyecto.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-xl shadow-md text-center border-t-4 border-green-500">
+                        <div class="text-3xl font-extrabold text-green-500/30 mb-2">05</div>
+                        <h3 class="font-bold text-slate-800">Iniciar Pilotos</h3>
+                        <p class="text-sm text-slate-500 mt-2">¡Comenzar la producción de los primeros cursos!</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="cta-gradient text-white p-12 rounded-3xl text-center shadow-2xl">
+                    <h2 class="text-3xl font-extrabold mb-4">¿Quieres conocer todos los detalles?</h2>
+                    <p class="max-w-2xl mx-auto mb-8">
+                        Explora el documento completo de la Estrategia de Producción para entender a fondo cada fase, rol y objetivo de nuestro plan.
+                    </p>
+                    <a href="https://docs.google.com/document/d/1nVNrO1re8vfkJJBOrsB87Ll4bVoEEVZfco_I-5iCJ9Q/edit?usp=sharing" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-indigo-600 px-8 py-4 rounded-full text-base font-bold hover:bg-slate-100 transform hover:scale-105 transition-all">
+                        Ver la Estrategia Completa
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center text-sm text-slate-400">
+            <p>&copy; 2025 Umine. Propuesta Estratégica de Producción Audiovisual - Catálogo 2.0.</p>
+        </div>
+    </footer>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Interactive Hub Diagram
+        const hubNodes = document.querySelectorAll('.hub-node');
+        const infoBox = document.getElementById('hub-info-box');
+        
+        hubNodes.forEach(node => {
+            node.addEventListener('mouseenter', () => {
+                const info = node.getAttribute('data-info');
+                infoBox.textContent = info;
+                infoBox.classList.remove('opacity-0');
+            });
+
+            node.addEventListener('mouseleave', () => {
+                infoBox.textContent = '';
+                infoBox.classList.add('opacity-0');
+            });
+        });
+
+        // Animated Counters
+        const counters = document.querySelectorAll('[data-target]');
+        const options = {
+            root: null,
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counter = entry.target;
+                    const target = parseFloat(counter.getAttribute('data-target'));
+                    const prefix = counter.getAttribute('data-prefix') || '';
+                    const suffix = counter.getAttribute('data-suffix') || '';
+                    
+                    let current = 0;
+                    const increment = target / 100;
+
+                    const updateCounter = () => {
+                        if (current < target) {
+                            current += increment;
+                             const hasDecimal = String(target).includes('.');
+                             const displayValue = hasDecimal ? current.toFixed(1) : Math.ceil(current);
+                            counter.innerText = `${prefix}${displayValue}${suffix}`;
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            counter.innerText = `${prefix}${target}${suffix}`;
+                        }
+                    };
+
+                    updateCounter();
+                    observer.unobserve(counter);
+                }
+            });
+        }, options);
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    });
+    </script>
+</body>
+</html>
