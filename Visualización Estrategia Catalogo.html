@@ -609,8 +609,16 @@
             monthsContainer.addEventListener('click', (e) => {
                 const card = e.target.closest('.month-card');
                 if (!card) return;
-
+                
+                // Toggle active state
+                const isActive = card.classList.contains('active');
                 document.querySelectorAll('.month-card').forEach(c => c.classList.remove('active'));
+                
+                if (isActive) {
+                    coursesListContainer.innerHTML = '';
+                    return;
+                }
+
                 card.classList.add('active');
                 
                 const selectedMonthKey = card.dataset.monthKey;
@@ -622,6 +630,7 @@
                     listHtml += `<li class="flex items-start text-sm"><span class="text-green-500 mr-3 mt-1">&#10003;</span><span class="text-slate-700">${course.name}</span></li>`;
                 });
                 listHtml += '</ul>';
+                listHtml += '<p class="text-xs text-slate-400 italic mt-6 text-center">Proyección sujeta a los resultados y aprendizajes de la Fase Piloto inicial.</p>';
                 
                 coursesListContainer.innerHTML = listHtml;
             });
