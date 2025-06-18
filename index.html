@@ -619,9 +619,7 @@
 
                 let listHtml = '<ul class="space-y-3 mt-4 border-t border-slate-200 pt-4">';
                 courses.forEach(course => {
-                    const date = new Date(course.date + 'T00:00:00Z');
-                    const day = date.getUTCDate();
-                    listHtml += `<li class="flex items-start text-sm"><span class="text-green-500 mr-3 mt-1">&#10003;</span><span class="text-slate-700">${course.name} <span class="text-slate-500">- Disponible el día <strong>${day}</strong></span></span></li>`;
+                    listHtml += `<li class="flex items-start text-sm"><span class="text-green-500 mr-3 mt-1">&#10003;</span><span class="text-slate-700">${course.name}</span></li>`;
                 });
                 listHtml += '</ul>';
                 
